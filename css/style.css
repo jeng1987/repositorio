@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --azul1:#03045E;
+    --azul2:#023E8A;
+    --azul3:#0077B6;
+    --azul4:#0096C7;
+    --azul5:#00B4D8;
+    --azul6:#48CAE4;
+    --azul7:#90E0EF;
+    --fuente1:'Courier New', Courier, monospace;
+}
+html{ /*root es lo mismo que el selector css pero con mayor especificidad*/
+    font-size: 62.5%;
+    font-family: var(--fuente1);
+    color:var(--azul1);
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);    
+}
+
